@@ -1,4 +1,4 @@
-set(wav_compile_features c_std_99)
+# set(wav_compile_features c_std_99)
 
 set(wav_compile_definitions
   __STDC_FORMAT_MACROS
@@ -44,4 +44,4 @@ elseif(${CMAKE_C_COMPILER_ID} MATCHES "^(GNU|.*Clang)$")
   endforeach()
 endif()
 
-set(wav_compile_options_release -fomit-frame-pointer -march=native -mtune=native)
+set(wav_compile_options_release -fomit-frame-pointer)
